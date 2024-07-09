@@ -5,6 +5,7 @@
 body{
     margin: 0px;
     padding: 0px;
+    
 }
 /* en têtê */
 header ul { 
@@ -31,10 +32,14 @@ header img {
     gap: 10px;
 }
 
-.container1 {
+.container {
     max-width: 1440px;
-    margin:auto
+    min-width: 320px;   
+    margin:auto;
+    justify-content: space-between;
+    display: flex;
 }
+
 
 ul li a{
      color: black;
@@ -235,6 +240,13 @@ header ul{
 
 /* section groupe */
 
+.spaceAround {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 1440px;
+   margin: auto;
+}
 .taillehebergement{
    flex: 200%;
    width: 871px;
@@ -244,6 +256,7 @@ header ul{
    background-color: #f2f2f2;
    padding: 30px;
    gap: 30px;
+   
 }
 
 .taillepopulaire {
@@ -255,8 +268,9 @@ header ul{
     background-color: #f2f2f2;
     padding: 30px;
     gap: 30px;
+    
 }
-
+/* Début hebergement */
 .taillehebergement .card {  
     width: fit-content 250.33px;
     background: white;
@@ -317,7 +331,7 @@ h2 {
     font-size: 24px;
 }
 
-.container {
+.container-pop {
     display: flex;
     flex-direction: column;
     gap: 20px;
@@ -342,13 +356,14 @@ h2 {
     display: flex;
     flex-wrap: wrap;
 }
-
+/* Début populaire */
 .hotel-info {
     padding: 10px;
     display: flex;
     flex-direction: column;
     justify-content: center;
 }
+
 
 .hotel-info h3 {
     margin: 0;
@@ -374,7 +389,7 @@ h2 {
         align-items: center;
         justify-content: space-between;
 }
-
+ /* activité marseille grandes photos */
 .title {
     color: #000000;
     font-weight: 700;
@@ -422,21 +437,32 @@ h2 {
     margin-top: 10px; 
   }
 
+  .container-activite .card2 h3 {
+   
+    margin-bottom: 10px;  
+    padding-left: 10px;  
+}
+
+
+ /* debut du footer */
   .container-footer {
     display: flex;
-    justify-content: center; /* Centre le contenu du footer */
-    padding: 20px 0; /* Ajoute un peu de marge au-dessus et en-dessous du footer */
-    background-color: #fff; /* Couleur de fond de la page */
+    justify-content: center; 
+    padding: 20px 0; 
+    background-color: #fff;
+   width: 100%;
+   margin-left: 10px;
+   margin-right: 10px;
 }
 
 .footer-content {
     display: flex;
     justify-content: space-between;
     padding: 20px;
-    background-color: #F2F2F2; /* Couleur de fond gris */
-    border-radius: 8px; /* Arrondit les coins */
-    width: 90%; /* Ajuste la largeur du conteneur centralisé */
-    max-width: 1200px; /* Limite la largeur maximale */
+    background-color: #F2F2F2; 
+    border-radius: 8px; 
+    width: 1340px; 
+    max-width: 1440px; 
 }
 
 .footer-section {

@@ -1,0 +1,17 @@
+@media all and (max-width: 1024px) and (min-width : 768px) {
+    .container {
+      flex-direction: column;
+    }
+  
+    .taillehebergement .taillepopulaire {
+      width: 100%;
+    }
+
+    .container-pop .hotel-card{
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        flex-wrap: wrap;
+    }
+
+}
