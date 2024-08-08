@@ -22,27 +22,81 @@ header .menu ul {
   padding: 0;
 }
 
+.espace {
+  margin-right: 20px;
+  margin-bottom: 20px;
+}
+.filter {
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: flex-start;
+  margin-left: 20px;
+}
+
+.filters {
+  display: flex;
+  flex-direction: row;
+}
+
 .taillepopulaire {
-  flex: 100%;
-  height: 569px;
+ 
+ flex: 100%;
   margin-left: 30px;
   border-radius: 15px;
   background-color: #f2f2f2;
   padding: 30px;
   gap: 30px;
   margin-right: 30px;
+  margin-top: 20px;
+    height: 252px;
+    
 }
   .taillehebergement, .taillepopulaire {
     width: 90%;
   }
-  .taillepopulaire {
-    margin-top: 20px;
-  }
-  
-  .taillepopulaire .container-pop {
+ 
 
+  .hotel-card p {
+    display: flex;
+    margin-bottom: 20px;
+  }
+
+  .hotel-card h4 {
+    margin-bottom: 0px;
+
+  }
+
+  .hotel-card .card-link {
+    text-decoration: none;
+    color: inherit;
+    display: block;
+    width: 100%;
+    margin-left: -15px;
+}
+
+.hotel-card img {
+  width: 40%;
+  height: 146px;
+  object-fit: cover;
+  border-radius: 20px 0px 0px 20px;
+}
+  .taillepopulaire .container-pop {
     flex-direction: row;
   }
+  .container-pop{
+    display: flex;
+  }
+
+  .hotel-info {
+    padding: 10px 5px 0px 0px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    margin-right: 10px;
+    margin-bottom: 30px;
+}
   .taillehebergement {
     margin-bottom: 20px;
   }
@@ -55,6 +109,25 @@ header .menu ul {
     padding: 20px;
     gap: 30px;
     margin-left: 30px;
+}
+
+.hotel-card {
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 20px;
+  overflow: hidden;
+  display: flex;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  height: 146px;
+  gap: 30px;
+  align-items: center;
+  padding: 3px 3px 3px 3px;
+  width: 100%;
+}
+.hotel-info h3 {
+
+  display: flex;
+  align-items: center
 }
   .container-activite {
     display: flex;
@@ -87,12 +160,30 @@ header .menu ul {
  flex-wrap: wrap;
 
 }
-
+.container-activite .card2 {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 0 0 20px 20px;
+  gap: 30px;
+  width: 20%;
+  height: 270px;
+}
 .title {
   color: #000000;
   font-weight: 700;
   size: 22px;
   padding: 0 40px;
+}
+
+.footer-content {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+  background-color: #F2F2F2;
+  border-radius: 8px;
+  max-width: 1440px;
+  height: 163px;
+  margin-left: 30px;
+  margin-right: 30px;
 }
 }
 
