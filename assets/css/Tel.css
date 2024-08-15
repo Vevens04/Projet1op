@@ -1,4 +1,18 @@
 @media all and (max-width: 768px) and (min-width : 320px){
+          
+         
+  
+            html, body {
+            width: 100%;
+            height : 100%; }
+         
+  
+          body {
+            margin: 0 auto;
+            padding: 0px;
+           width: 100%;
+           box-sizing: border-box;
+          }
 
           header img {
             display: flex;
@@ -10,20 +24,30 @@
             margin-left: 50px;
         }
 
-        header ul {
-          margin-top: 0;
-          display: flex;
-          margin-left: 50px;
-      }
+          header ul {
+            margin-top: 0px;
+            display: flex;
+            width: 100%;
+        }
       .container {
         flex-direction: column;
         gap: 10px;
         align-items: center;
         display: flex;
         justify-content: center;
+        max-width: 1440px;
     }
+
+    .spaceAround {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      max-width: 1440px;
+      margin: auto;
+  }
         nav ul li {
           padding: 50px;
+          width: 50%;
       }
       
       .titre .p {
@@ -40,12 +64,25 @@
         border: 0.5px solid #f2f2f2;
         margin-left: 80px;
     }
-    .flexbetween {
-      display: flex;
-      justify-content: flex-start;
-      align-items: center;
-      width: 42%;
+
+    .recherchetaille {
+      width: 50px;
+      border-radius: 15px;
+    }
+
+    .boutonMobile {
+      display: none;
+    }
+    .boutonDesktop {
+      display: block;
   }
+  .flexbetween {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    width: 42%;
+    margin-bottom: 20px;
+}
 
     .filtreTexte {
       padding-left: 0px;
@@ -58,13 +95,14 @@
       margin-left: 80px;
   }
   .corps .titre {
-    margin-bottom: 5px; 
+    margin-bottom: 5px;
+    margin-top: -45px;
 }
 
-.corps p {
-    margin-top: 0;
-}
-        .hebergements, .taillepopulaire {
+        .corps p {
+            margin-top: 0;
+        }
+          .hebergements, .taillepopulaire {
           width: 100%;
         }
         .taillepopulaire {
@@ -96,8 +134,10 @@
       }
 
       .hotel-info h4 {
-        margin-bottom: 50px;
-      }
+        margin-bottom: 90px;
+        margin-top: 0px;
+    }
+
 
       .hotel-info p{
         margin-top: -50px;
@@ -105,6 +145,7 @@
       
       .hotel-info h4 p {
         margin-top: 10px;
+        margin-bottom: 52px;
       }
       .taillehebergement .card {
         width: 100%;
@@ -127,18 +168,19 @@
       object-fit: cover;
      
   }
-    .taillepopulaire {
-      flex: 100%;
-      width: 100%;
-      height: 569px;
-      margin-left: 80px;
-      border-radius: 15px;
-      background-color: #f2f2f2;
-      padding: 30px;
-      gap: 30px;
-      display: flex;
-      flex-direction: column;
-  }
+  .taillepopulaire {
+    flex: 100%;
+    width: 100%;
+    height: 569px;
+    border-radius: 15px;
+    background-color: #f2f2f2;
+    padding: 30px;
+    gap: 30px;
+    display: flex;
+    flex-direction: column;
+    padding-right: 80px;
+    padding-left: 130px;
+}
 
 
         .hebergements {
@@ -168,6 +210,7 @@
       border: 1px solid #ddd;
       display: flex;
       flex-wrap: wrap;
+      object-fit: cover;
   }
       .container-cards h4{
        margin-top: 10px;
@@ -211,6 +254,16 @@
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 13px;
+}
+
+.info {
+  display: flex;
+  margin-left: 30px;
+  margin-right: 50px;
+  gap: 10px;
+  margin-top: 0px;
 }
 
 .footer-content {
@@ -220,7 +273,9 @@
   background-color: #F2F2F2;
   border-radius: 8px;
   max-width: 1440px;
-  width: 461px;
+  width: 100%;
+  height: 461px;
+  gap: 50px;
 }
 .footer-section {
   flex: 1;

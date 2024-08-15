@@ -1,7 +1,7 @@
 * {
     font-family: 'Raleway', sans-serif;
 }
-
+html, body { height : 100%; }
 body{
     margin: 0px;
     padding: 0px;
@@ -134,6 +134,13 @@ header ul{
    border-radius: 0px 15px 15px 0px;
    background-color: #0065fc;
    align-items: center;
+}
+.recherchetaille p {
+    color: #F2F2F2;
+}
+
+.boutonDesktop {
+    display: none;
 }
 
 /* partie filtre */
