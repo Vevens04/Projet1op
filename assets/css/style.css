@@ -72,7 +72,9 @@ header ul{
       
 }
 .titre {
-    font-size: 16px;
+    font-size: 22px;
+    margin-top: 0px;
+    margin-bottom: 0px;
 }
 
 /* Partie bar de recherche */
@@ -115,6 +117,7 @@ header ul{
     height: 21px;
     font-size: 18px;
     font-weight: 700;
+    padding: 15px;
 }
 
 .fondgris{
@@ -150,6 +153,30 @@ header ul{
     display: none;
 }
 
+.boutonMobile {
+    display: block;
+  }
+
+.recherchetaille {
+    background-color: #0065FC; 
+    border: none; 
+    padding: 11px; 
+    border-radius: 0px 15px 15px 0px; 
+    color: white; 
+    width: 121px; 
+    height: 50px; 
+    font-weight: bold; 
+    cursor: pointer; 
+    display: flex; 
+    justify-content: center; 
+    align-items: center; 
+    transition: background-color 0.3s ease; 
+  }
+  
+  .recherchetaille:hover {
+    background-color: #0051d4; 
+  }
+
 /* partie filtre */
 
 
@@ -167,25 +194,22 @@ header ul{
 }
 .rondsolide {
     background-color: white;
-    transition: background-color 0.3s ease;
-    border: 2px solid #f2f2f2;
-    border-radius: 30px;
-    height: 50px;
-    margin-right: 20px;
-  
-}
- .rondsolide :hover {
-    background-color:#DEEBFF;
-    ;
-    color: white !important;
- }
-.iconefiltre {
+    border: 2px solid rgba(242, 242, 242, 1);
     border-radius: 25px;
-    width: 52px;
-    height: 52px;
+    padding: 10px 15px; 
+    display: flex; 
+    align-items: center; 
+    cursor: pointer; 
+    transition: background-color 0.3s ease; 
+  }
+  .rondsolide:hover {
+    background-color: #E0F0FF; 
+  }
 
-    color: #0065fc;
-}
+  .iconfiltre {
+    font-size: 16px; 
+    margin-right: 8px; 
+  }
 
 .centreicon {
  
@@ -200,9 +224,13 @@ header ul{
     
 }
 
-
+.filtreTexte {
+    font-size: 16px; 
+    font-weight: bold; 
+    color: #000000; 
+  }
 .filtreTexte{
-    height: 50px;
+    height: 28px;
     padding-left: 20px; 
     padding-right: 20px;
     border-radius: 0 25px 25px 0;
@@ -223,7 +251,7 @@ header ul{
 
 .flexbetween {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: flex-start;
     align-items: center;
     margin-right: 10px;
@@ -306,14 +334,19 @@ header ul{
 }
 
 /* Début hebergement */
-.taillehebergement .card {  
-    width: 29%;
+
+.taillehebergement .card {
+    width: 250px;
     background: white;
     justify-content: center;
     border-radius: 20px;
-    padding:3px 3px 15px 3px;
+    padding: 3px 3px 15px 3px;
     filter: drop-shadow(0px 3px 15px rgba(0, 0, 0, 0.1));
     height: 207.25px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    flex: 1 1 calc(33.333% - 20px);
     
 }
 
@@ -330,7 +363,7 @@ header ul{
     gap: 8px;
     display: flex;
     flex-wrap: wrap;
-   
+   object-fit: cover;
    
 }
 .card-link{
@@ -339,14 +372,13 @@ header ul{
     color: inherit; 
     display: block; 
 }
-.container-cards  {
-    padding: 20px;
+
+.container-cards {
     display: flex;
-    justify-content: center;
     padding: 20px;
-    justify-content: space-around;
     flex-wrap: wrap;
     gap: 20px;
+    justify-content: space-between;
 }
 
 .container-cards .card .img1{
@@ -357,17 +389,21 @@ header ul{
 
 .info-cards {
     padding: 4px;
+    display: flex;
 }
 
 .info-cards p {
     display: flex;
     margin: 5px 0;
     color: #555;
+    font-size: 12px;
 }
 
-.info-cards h4 {
-    margin: 5px 0;
+.info-cards h5 {
     color: #000000;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    font-size: 16px;
 }
 .popular-section {
     background-color: #f2f2f2;
@@ -399,7 +435,7 @@ h2 {
     height: 146px;
     gap: 30px;
     align-items: center;
-    padding: 3px 3px 3px 3px;
+    padding: 10px 6px 5px 7px;
 }
 
 .hotel-card img {
@@ -471,7 +507,7 @@ h2 {
 .title {
     color: #000000;
     font-weight: 700;
-    size: 22px;
+   font-size: 22px;
     padding: 4px;
     margin: 20px;
 }

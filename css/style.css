@@ -1,0 +1,574 @@
+* {
+    font-family: 'Raleway', sans-serif;
+}
+html, body { height : 100%; }
+body{
+    margin: 0px;
+    padding: 0px;
+    width: 100%;
+}
+/* en têtê */
+header ul { 
+     list-style-type: none;
+     display: flex;
+     
+    
+}
+
+nav ul li{
+    padding: 10px;
+    
+}
+header{
+    display: flex; 
+    justify-content: space-between;
+}
+
+header img {
+    width: 79px;
+    height: auto;
+    padding: 30px 50px 30px 50px;
+    justify-content: flex-start;
+    gap: 10px;
+}
+
+.container {
+    max-width: 1440px;   
+    margin:auto;
+}
+
+
+
+ul li a{
+     color: black;
+     letter-spacing: 0.1rem;
+}
+
+ul li:hover{
+    border-top: 2px solid #0065FC;   
+    
+}
+
+header ul li {
+    padding-top: 20px;
+}
+
+header ul{
+    margin-top: 0;
+
+}
+
+.menu li a {
+  text-decoration: none;          
+}
+
+
+.corps {
+        width: 50%;
+        background-size: cover;
+        background-position: center;
+        padding:30px 50px 30px 50px;
+        
+      
+}
+.titre {
+    font-size: 16px;
+}
+
+/* Partie bar de recherche */
+
+.searchbar {
+    display: flex;
+    justify-content: center;
+    width: 377px;
+    border-radius: 15px;
+    height: 50px;
+    align-items: center;
+    border: 0.5px solid #f2f2f2;
+    margin-left: 30px;
+    border: none;
+}
+
+
+.mapstaille{
+
+    width: 17px;
+    height: 18px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.recherchetaille {
+    width: 100px;
+    height: 21px;
+    font-size: 18px;
+   font-weight: 700;
+}
+
+.centrerecherche {
+   display: flex; 
+    justify-content: center;
+    border: none;
+    align-items: center;
+    width: 200px;
+    height: 21px;
+    font-size: 18px;
+    font-weight: 700;
+}
+
+.fondgris{
+    width: 50px;
+    height: 49px;
+    border-radius: 15px 0px 0px 15px;
+    
+    background-color: #f2f2f2;
+    display: flex;
+    
+    
+}
+
+.recherchetaille{
+   height: 49px;
+}
+
+.searchbar button {
+    background-color: #0065FC;
+    border: none;
+    padding: 11px;
+    border-radius: 0px 15px 15px 0px;
+    color: white;
+    width: 121px;
+    height: 50px;
+    font-weight: bold;
+}
+.recherchetaille p {
+    color: #F2F2F2;
+}
+
+.boutonDesktop {
+    display: none;
+}
+
+/* partie filtre */
+
+
+.filter {
+    display: flex;
+    align-items: center;
+    margin-top: 50px;
+    margin-bottom: 40px;
+    padding-left: 30px;
+}
+
+.espace {
+  margin-right: 20px;
+   
+}
+.rondsolide {
+    background-color: white;
+    transition: background-color 0.3s ease;
+    border: 2px solid #f2f2f2;
+    border-radius: 30px;
+    height: 50px;
+    margin-right: 20px;
+  
+}
+ .rondsolide :hover {
+    background-color:#DEEBFF;
+    ;
+    color: white !important;
+ }
+.iconefiltre {
+    border-radius: 25px;
+    width: 52px;
+    height: 52px;
+
+    color: #0065fc;
+}
+
+.centreicon {
+ 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.rondsolide:hover > .filtreTexte {
+    color:#0065fc ;
+    
+}
+
+
+.filtreTexte{
+    height: 50px;
+    padding-left: 20px; 
+    padding-right: 20px;
+    border-radius: 0 25px 25px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   
+}
+.rondsolide :hover > .iconefiltre{
+    color: #0065FC;
+    background-color: white;
+}
+
+.fa-solid .fa-circle-info {
+
+    padding: auto;
+}
+
+.flexbetween {
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    align-items: center;
+    margin-right: 10px;
+    margin-left: 10px;
+}
+.filters {
+    display: flex;
+    flex-direction: row;
+  }
+  .info {
+    display: flex;
+    margin-left: 30px;
+    margin-top: 50px;
+    margin-right: 50px;
+    padding: 30px;
+    gap: 10px;
+    padding-left: 11px;
+}
+
+.icon-info {
+    margin-right: 10px; 
+    vertical-align: middle; 
+}
+.spaceAround {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.spaceCentre {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.spaceBetween {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* section groupe */
+
+.spaceAround {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 1440px;
+   margin: auto;
+}
+.taillehebergement {
+    flex: 200%;
+    width: 100%;
+    margin-right: 20px;
+    border-radius: 15px;
+    background-color: #f2f2f2;
+    padding: 30px 50px 30px 50px;
+    gap: 30px;
+    height: 614px;
+    margin-left: 30px;
+}
+
+ .bleu{
+    color: #0065fc;
+ }
+.colorsgris {
+ color: lightgrey;
+
+}
+.taillepopulaire {
+    flex: 100%;
+    width: 100%;
+    height: 614px;
+    margin-left: 20px;
+    border-radius: 15px;
+    background-color: #f2f2f2;
+    padding: 30px 50px 30px 50px;
+    gap: 30px;
+}
+
+/* Début hebergement */
+.taillehebergement .card {  
+    width: 29%;
+    background: white;
+    justify-content: center;
+    border-radius: 20px;
+    padding:3px 3px 15px 3px;
+    filter: drop-shadow(0px 3px 15px rgba(0, 0, 0, 0.1));
+    height: 207.25px;
+    
+}
+
+ .card  {
+    transition: transform 1.5s ease, box-shadow 0.3s ease;
+}
+
+.taillehebergement .card .img1 img{
+    width: 100%;
+    border-radius: 20px 20px 0px 0px;
+    border-top-left-radius: 20px;
+    border-top-left-radius: 20px;
+    height: 124px;
+    gap: 8px;
+    display: flex;
+    flex-wrap: wrap;
+   
+   
+}
+.card-link{
+
+    text-decoration: none; 
+    color: inherit; 
+    display: block; 
+}
+.container-cards  {
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.container-cards .card .img1{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+
+.info-cards {
+    padding: 4px;
+}
+
+.info-cards p {
+    display: flex;
+    margin: 5px 0;
+    color: #555;
+}
+
+.info-cards h4 {
+    margin: 5px 0;
+    color: #000000;
+}
+.popular-section {
+    background-color: #f2f2f2;
+    padding: 30px;
+    border-radius: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: fit-content 429px;
+    gap: 30px;
+}
+
+h2 {
+    margin-bottom: 20px;
+    font-size: 24px;
+}
+
+.container-pop {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.hotel-card {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 20px;
+    overflow: hidden;
+    display: flex;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    height: 146px;
+    gap: 30px;
+    align-items: center;
+    padding: 3px 3px 3px 3px;
+}
+
+.hotel-card img {
+    width: 123px;
+    height: 146px;
+    object-fit: cover;
+    border-radius: 20px 0px 0px 20px;
+  
+}
+
+.hotel-info {
+    padding: 10px;
+}
+
+.hotel-info h3 {
+    margin: 0;
+    font-size: 1.2em;
+}
+
+.hotel-info p {
+    margin: 5px 0;
+}
+
+.stars {
+    display: flex;
+    gap: 2px;
+}
+
+.stars i {
+    color: #0065FC;
+}
+
+
+/* Début populaire */
+.hotel-info {
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+
+.hotel-info h3 {
+    margin: 0;
+    font-size: 18px;
+}
+
+.hotel-info p {
+    margin: 5px 0;
+    color: #555;
+}
+
+.stars {
+    color: #0065FC;
+    margin-top: 5px;
+}
+.card-rating {
+    color: #0065FC;
+    margin-top: 5px;
+}
+
+.icon {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+}
+
+ /* activité marseille grandes photos */
+.title {
+    color: #000000;
+    font-weight: 700;
+    size: 22px;
+    padding: 4px;
+    margin: 20px;
+}
+
+.activite {
+
+    margin-top: 30px;
+}
+.container-activite {
+    display: flex;
+   
+    justify-content: space-between;
+    border-radius: 0 0 20px 20px;
+    padding: 20px 19px 20px 19px;
+    gap: 20px;
+    background-color: #FFFFFF;
+    flex-wrap: wrap;
+    
+    
+}
+
+.container-activite img {
+    width: 100%;
+    border-radius:20px 20px 0px 0px ;
+    height: 380px;
+    filter: drop-shadow(0px 3px 15px rgba(0, 0, 0, 0.1));
+    border: 1px solid #ddd;
+   display: flex; 
+   flex-wrap: wrap;
+  
+}
+
+.container-activite .card2 {
+    
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 0 0 20px 20px;
+    gap: 30px;
+    width: 20%;
+    height: 439px;
+}
+
+.container-activite h3 {
+    margin-top: 10px; 
+  }
+
+  .container-activite .card2 h3 {
+   
+    margin-bottom: 10px;  
+    padding-left: 10px;  
+}
+
+
+
+ /* debut du footer */
+  .container-footer {
+    display: flex;
+    justify-content: center; 
+    padding: 20px 0; 
+    background-color: #fff;
+   width: 100%;
+   margin: auto;
+
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    padding: 30px 50px 30px 50px;
+    background-color: #F2F2F2;
+    border-radius: 8px;
+    max-width: 1440px;
+}
+.footer-section {
+    flex: 1;
+    margin: 0 20px;
+}
+
+.footer-section h3 {
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+.footer-section ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.footer-section li {
+    margin-bottom: 5px;
+}
+
+.footer-section a {
+    text-decoration: none;
+  
+}
+
+.footer-section a:hover {
+    text-decoration: none;
+}
